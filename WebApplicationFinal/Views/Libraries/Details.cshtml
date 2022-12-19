@@ -1,0 +1,30 @@
+﻿@model WebApplicationFinal.Models.Library
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Library</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.total_nr_of_books)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.total_nr_of_books)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.borrowed_books)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.borrowed_books)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.stock_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
