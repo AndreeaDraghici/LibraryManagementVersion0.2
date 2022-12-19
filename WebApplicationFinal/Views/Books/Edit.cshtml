@@ -1,0 +1,60 @@
+﻿@model WebApplicationFinal.Models.Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<link rel="stylesheet" href="~/css/editare.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1 class="alert alert-info">Editeaza cartea</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="book_id" />
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label asp-for="publisher" class="control-label"></label>
+                <input asp-for="publisher" class="form-control" />
+                <span asp-validation-for="publisher" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="category_type" class="control-label"></label>
+                <input asp-for="category_type" class="form-control" />
+                <span asp-validation-for="category_type" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label asp-for="stock_id" class="control-label"></label>
+                <input asp-for="stock_id" class="form-control" />
+                <span asp-validation-for="stock_id" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="message_id" class="control-label"></label>
+                <input asp-for="message_id" class="form-control" />
+                <span asp-validation-for="message_id" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Salveaza" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br/>
+<div>
+    <a asp-action="Index" class="alert alert-info">Inapoi la pagina cu carti</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
