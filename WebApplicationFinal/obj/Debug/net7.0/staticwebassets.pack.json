@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\images\\library.jpg"
     },
     {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\open-book.jpg",
       "PackagePath": "staticwebassets\\images\\open-book.jpg"
     },
@@ -335,6 +339,14 @@
     {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\video\\bible-70216.mp4",
+      "PackagePath": "staticwebassets\\video\\bible-70216.mp4"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\video\\books.mp4",
+      "PackagePath": "staticwebassets\\video\\books.mp4"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApplicationFinal.Microsoft.AspNetCore.StaticWebAssets.props",
