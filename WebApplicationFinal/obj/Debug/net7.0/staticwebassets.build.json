@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XArmwQ7HOhgZrPhoz28Ca59GD6om/WeFYuufHFFAInI=",
+  "Hash": "GThwtnO4xTWjTIM8xt7nHaaQmb1Lv2oVKx7dJ9cS/20=",
   "Source": "WebApplicationFinal",
   "BasePath": "_content/WebApplicationFinal",
   "Mode": "Default",
@@ -1428,6 +1428,23 @@
       "OriginalItemSpec": "wwwroot\\images\\library-management-system.jpg"
     },
     {
+      "Identity": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\logo.png",
+      "SourceId": "WebApplicationFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\",
+      "BasePath": "_content/WebApplicationFinal",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
       "Identity": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\MisterulVietii.jpg",
       "SourceId": "WebApplicationFinal",
       "SourceType": "Discovered",
@@ -2480,6 +2497,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\video\\bible-70216.mp4",
+      "SourceId": "WebApplicationFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\",
+      "BasePath": "_content/WebApplicationFinal",
+      "RelativePath": "video/bible-70216.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\bible-70216.mp4"
+    },
+    {
+      "Identity": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\video\\books.mp4",
+      "SourceId": "WebApplicationFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\",
+      "BasePath": "_content/WebApplicationFinal",
+      "RelativePath": "video/books.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\books.mp4"
     }
   ]
 }
