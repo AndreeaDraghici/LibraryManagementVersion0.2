@@ -35,25 +35,25 @@ li {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-family: "Lucida Console", "Courier New", monospace;
-    }
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: "Lucida Console", "Courier New", monospace;
+}
 
-        li a:hover:not(.active) {
-            background-color: purple;
-        }
+li a:hover:not(.active) {
+   background-color: purple;
+}
 
 #detalii {
-    background-image: linear-gradient(aqua,blue);
+    background-image: linear-gradient(yellow,orange);
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
-    padding: 15px;
+    padding: 5px;
     font-weight: bold;
     position: relative;
-    color: black;
+    color: green;
 }

@@ -10,9 +10,8 @@
 
         .title p {
             color: green;
-            text-align: center;
             font-weight: bold;
-            font-size: medium;
+            font-size: large;
         }
     </style>
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
@@ -25,7 +24,8 @@
     <center>
         <img style=" width:300px;height:250px;" src="https://www.skoolbeep.com/blog/wp-content/uploads/2020/12/HOW-DO-YOU-DESIGN-A-LIBRARY-MANAGEMENT-SYSTEM-min-768x768.png">
     </center>
-    <p>
+
+    <p id="detalii">
         Library Management is a computerized system which helps
         user (librarian) to manage the library daily activity in electronic format.
     </p>
@@ -35,6 +35,39 @@
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.8048368293857!2d24.3478485152665!3d44.10801883091933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ace0e4a1e174a7%3A0xbd4b0240dbfa25b1!2sIntrarea%20Muzeului%2015%2C%20Caracal%20235200!5e0!3m2!1sen!2sro!4v1676998906716!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <button onclick="getLocation()">Location</button>
+        <p id="demo"></p>
+        <script>
+            var x = document.getElementById("demo");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+            function showError(error) {
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        x.innerHTML = "User denied the request for Geolocation."
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        x.innerHTML = "Location information is unavailable."
+                        break;
+                    case error.TIMEOUT:
+                        x.innerHTML = "The request to get user location timed out."
+                        break;
+                    case error.UNKNOWN_ERROR:
+                        x.innerHTML = "An unknown error occurred."
+                        break;
+                }
+            }
+        </script>
         <dl class="adr">
             <dt>
                 Str. Intrarea Muzeului nr. 15, <br>
