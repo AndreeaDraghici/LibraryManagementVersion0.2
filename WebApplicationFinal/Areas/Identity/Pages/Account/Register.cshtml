@@ -5,7 +5,7 @@
 }
 <link rel="stylesheet" href="~/css/register.css" />
 
-<h1>@ViewData["Title"]</h1>
+<h1 style="color:Tomato; background-color:aqua;text-align:center;">@ViewData["Title"]</h1>
 <br />
 <br />
 <head>
@@ -20,29 +20,29 @@
         <div class="row">
             <div class="col-md-4">
                 <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-                    <h2>Create a new account.</h2>
+                    <h2 style="background-color:aqua;text-align:center;">Create a new account.</h2>
                     <hr />
                     <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                     <div class="form-group">
-                        <label asp-for="Input.Email">Email</label>
+                        <label asp-for="Input.Email" style="background-color:powderblue" class="form-label">Email</label>
                         <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
                     <br />
                     <div class="form-group">
-                        <label asp-for="Input.Password">Password</label>
+                        <label asp-for="Input.Password" style="background-color:powderblue" class="form-label">Password</label>
                         <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
                     <br />
                     <div class="form-group">
-                        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                        <label asp-for="Input.ConfirmPassword" style="background-color:powderblue" class="form-label">Confirm Password</label>
                         <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="confirm your password" />
                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                     </div>
                     <br />
                     <br />
-                    <button id="registerSubmit" type="submit" id="ValidateEmail" class="w-100 btn btn-lg btn-primary" onclick="registerFunction()">Register</button>
+                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" onclick="registerFunction()">Register</button>
                         <script>
                            function registerFunction() {
                                 alert("Register successfully! :)");
@@ -64,20 +64,6 @@
         </div>
     </div>
 </body>
-<script> 
-    function ValidateEmail(uemail){
-
-      var mailformat =  /^\w+([\.-]?\w+)*\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      if(uemail.value.match(mailformat)){
-             return true;
-      }
-      else{
-            alert("You have entered an invalid email address!");
-            uemail.focus();
-            return false;
-      }
-    }
-</script>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
