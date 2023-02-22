@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <h3 class="alert alert-info">Are you sure you want to delete this?</h3>
-
 <div>
     <hr />
     <dl class="row">
@@ -31,22 +30,16 @@
             @Html.DisplayFor(model => model.category_type)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.stock_id)
+            @Html.DisplayNameFor(model => model.photoURL)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.stock_id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.message_id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.message_id)
+            @Html.DisplayFor(model => model.photoURL)
         </dd>
     </dl>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="book_id" />
-        <input type="submit" value="Sterge" class="btn btn-danger"/> |
-        <a asp-action="Index" class="alert alert-info">Inapoi la pagina cu carti</a>
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
     </form>
 </div>

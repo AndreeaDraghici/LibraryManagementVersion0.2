@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +20,6 @@ namespace WebApplicationFinal.Controllers
         }
 
         // GET: Books
-        [Authorize(Roles = "Admin,Client")]
         public async Task<IActionResult> Index()
         {
               return _context.Books != null ? 
@@ -31,7 +28,6 @@ namespace WebApplicationFinal.Controllers
         }
 
         // GET: Books/Details/5
-        [Authorize(Roles = "Admin,Client")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Books == null)
@@ -50,7 +46,6 @@ namespace WebApplicationFinal.Controllers
         }
 
         // GET: Books/Create
-        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -61,8 +56,7 @@ namespace WebApplicationFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("book_id,name,publisher,category_type,stock_id,message_id")] Book book)
+        public async Task<IActionResult> Create([Bind("book_id,name,publisher,category_type,photoURL")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -74,7 +68,6 @@ namespace WebApplicationFinal.Controllers
         }
 
         // GET: Books/Edit/5
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Books == null)
@@ -95,8 +88,7 @@ namespace WebApplicationFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("book_id,name,publisher,category_type,stock_id,message_id")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("book_id,name,publisher,category_type,photoURL")] Book book)
         {
             if (id != book.book_id)
             {
@@ -127,7 +119,6 @@ namespace WebApplicationFinal.Controllers
         }
 
         // GET: Books/Delete/5
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Books == null)
@@ -148,7 +139,6 @@ namespace WebApplicationFinal.Controllers
         // POST: Books/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Books == null)

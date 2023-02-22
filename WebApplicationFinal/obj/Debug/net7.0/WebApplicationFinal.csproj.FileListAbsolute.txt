@@ -18,8 +18,6 @@ D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Azure.Core.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Azure.Identity.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Humanizer.dll
-D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\MessagePack.dll
-D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\MessagePack.Annotations.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -61,7 +59,6 @@ D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
@@ -305,3 +302,11 @@ D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\obj\Debug\net7.0\WebApplicationFinal.pdb
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\obj\Debug\net7.0\WebApplicationFinal.genruntimeconfig.cache
 D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\obj\Debug\net7.0\ref\WebApplicationFinal.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\Data\Facultate\Anul4\Sem1\Proiect III\WebApplicationFinal\WebApplicationFinal\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so

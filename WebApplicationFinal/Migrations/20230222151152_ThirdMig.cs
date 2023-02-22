@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WebApplicationFinal.Migrations
 {
     /// <inheritdoc />
-    public partial class IdentityMig : Migration
+    public partial class ThirdMig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -56,8 +56,8 @@ namespace WebApplicationFinal.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    authorid = table.Column<int>(name: "author_id", type: "int", nullable: false),
-                    bookid = table.Column<int>(name: "book_id", type: "int", nullable: false)
+                    author_id = table.Column<int>(type: "int", nullable: false),
+                    book_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -174,14 +174,14 @@ namespace WebApplicationFinal.Migrations
                 name: "Authors",
                 columns: table => new
                 {
-                    authorid = table.Column<int>(name: "author_id", type: "int", nullable: false)
+                    author_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     authorBooksid = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Authors", x => x.authorid);
+                    table.PrimaryKey("PK_Authors", x => x.author_id);
                     table.ForeignKey(
                         name: "FK_Authors_AuthorBooks_authorBooksid",
                         column: x => x.authorBooksid,
@@ -193,18 +193,17 @@ namespace WebApplicationFinal.Migrations
                 name: "Books",
                 columns: table => new
                 {
-                    bookid = table.Column<int>(name: "book_id", type: "int", nullable: false)
+                    book_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     publisher = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    categorytype = table.Column<string>(name: "category_type", type: "nvarchar(max)", nullable: true),
-                    AuthorBookid = table.Column<int>(type: "int", nullable: true),
-                    stockid = table.Column<int>(name: "stock_id", type: "int", nullable: false),
-                    messageid = table.Column<int>(name: "message_id", type: "int", nullable: false)
+                    category_type = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    photoURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AuthorBookid = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Books", x => x.bookid);
+                    table.PrimaryKey("PK_Books", x => x.book_id);
                     table.ForeignKey(
                         name: "FK_Books_AuthorBooks_AuthorBookid",
                         column: x => x.AuthorBookid,
@@ -216,16 +215,16 @@ namespace WebApplicationFinal.Migrations
                 name: "Categories",
                 columns: table => new
                 {
-                    categorytype = table.Column<string>(name: "category_type", type: "nvarchar(450)", nullable: false),
-                    categoryid = table.Column<int>(name: "category_id", type: "int", nullable: false),
-                    bookid = table.Column<int>(name: "book_id", type: "int", nullable: true)
+                    category_type = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    category_id = table.Column<int>(type: "int", nullable: false),
+                    book_id = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Categories", x => x.categorytype);
+                    table.PrimaryKey("PK_Categories", x => x.category_type);
                     table.ForeignKey(
                         name: "FK_Categories_Books_book_id",
-                        column: x => x.bookid,
+                        column: x => x.book_id,
                         principalTable: "Books",
                         principalColumn: "book_id");
                 });
@@ -234,18 +233,18 @@ namespace WebApplicationFinal.Migrations
                 name: "Library",
                 columns: table => new
                 {
-                    stockid = table.Column<int>(name: "stock_id", type: "int", nullable: false)
+                    stock_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    bookid = table.Column<int>(name: "book_id", type: "int", nullable: true),
-                    totalnrofbooks = table.Column<int>(name: "total_nr_of_books", type: "int", nullable: false),
-                    borrowedbooks = table.Column<int>(name: "borrowed_books", type: "int", nullable: false)
+                    book_id = table.Column<int>(type: "int", nullable: true),
+                    total_nr_of_books = table.Column<int>(type: "int", nullable: false),
+                    borrowed_books = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Library", x => x.stockid);
+                    table.PrimaryKey("PK_Library", x => x.stock_id);
                     table.ForeignKey(
                         name: "FK_Library_Books_book_id",
-                        column: x => x.bookid,
+                        column: x => x.book_id,
                         principalTable: "Books",
                         principalColumn: "book_id");
                 });
@@ -254,17 +253,17 @@ namespace WebApplicationFinal.Migrations
                 name: "Messages",
                 columns: table => new
                 {
-                    messageid = table.Column<int>(name: "message_id", type: "int", nullable: false)
+                    message_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    bookid = table.Column<int>(name: "book_id", type: "int", nullable: true),
+                    book_id = table.Column<int>(type: "int", nullable: true),
                     subject = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Messages", x => x.messageid);
+                    table.PrimaryKey("PK_Messages", x => x.message_id);
                     table.ForeignKey(
                         name: "FK_Messages_Books_book_id",
-                        column: x => x.bookid,
+                        column: x => x.book_id,
                         principalTable: "Books",
                         principalColumn: "book_id");
                 });

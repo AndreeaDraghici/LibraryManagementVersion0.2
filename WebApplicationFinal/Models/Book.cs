@@ -6,18 +6,17 @@ namespace WebApplicationFinal.Models
     {
         [Key]
         public int book_id { get; set; }
+
+        [Display(Name = "Name")]
         public string? name { get; set; }
 
+        [Display(Name = "Publisher")]
         public string? publisher { get; set; }
-
+        [Display(Name = "Category")]
         public string? category_type { get; set; }
         public ICollection<Category>? Category { get; set; }
-        public AuthorBook? AuthorBook { get; set; }
-
-        public int stock_id { get; set; }
-        public ICollection<Library>? Library { get; set; }
-
-        public int message_id { get; set; }
-        public ICollection<Message>? Message { get; set; }
+  
+        [Display(Name = "Books")]
+        public string? photoURL { get; set; }
     }
 }
