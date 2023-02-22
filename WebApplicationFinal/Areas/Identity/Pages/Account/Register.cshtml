@@ -42,7 +42,7 @@
                     </div>
                     <br />
                     <br />
-                        <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" onclick="registerFunction()">Register</button>
+                    <button id="registerSubmit" type="submit" id="ValidateEmail" class="w-100 btn btn-lg btn-primary" onclick="registerFunction()">Register</button>
                         <script>
                            function registerFunction() {
                                 alert("Register successfully! :)");
@@ -64,6 +64,20 @@
         </div>
     </div>
 </body>
+<script> 
+    function ValidateEmail(uemail){
+
+      var mailformat =  /^\w+([\.-]?\w+)*\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(uemail.value.match(mailformat)){
+             return true;
+      }
+      else{
+            alert("You have entered an invalid email address!");
+            uemail.focus();
+            return false;
+      }
+    }
+</script>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
