@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GAsPOm/i4bfS3yslhFtI48Ln480CjAmoVRfJgEHXchQ=",
+  "Hash": "djd+qBNgAkTrudau1HOn2lXvJkJnCFUAWwU9jxQ9j1A=",
   "Source": "WebApplicationFinal",
   "BasePath": "_content/WebApplicationFinal",
   "Mode": "Default",
@@ -1443,6 +1443,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\CumSaFiiFericit.jpg"
+    },
+    {
+      "Identity": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\einstein.jpg",
+      "SourceId": "WebApplicationFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\",
+      "BasePath": "_content/WebApplicationFinal",
+      "RelativePath": "images/einstein.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\einstein.jpg"
     },
     {
       "Identity": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\Home.jpg",

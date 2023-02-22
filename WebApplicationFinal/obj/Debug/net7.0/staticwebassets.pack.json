@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\images\\contact.jpg"
     },
     {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\einstein.jpg",
+      "PackagePath": "staticwebassets\\images\\einstein.jpg"
+    },
+    {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\library-management-system.jpg",
       "PackagePath": "staticwebassets\\images\\library-management-system.jpg"
     },

@@ -7,58 +7,80 @@
 <link rel="stylesheet" href="~/css/register.css" />
 <h1>@ViewData["Title"]</h1>
 
-<div class="myregisterclass">
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-group">
-                    <label asp-for="Input.Email" class="form-label">Email</label>
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <br />
-                <div class="form-group">
-                    <label asp-for="Input.Password" class="form-label">Password</label>
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <br />
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
-                        <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
-                </div>
-                <br />
-                <div>
-                        <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary" onclick="loginFunction()">Log in</button>
-                </div>
-                <br />
-                <div>
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
-                </div>
-                <script>
-                   function loginFunction() {
-                        alert("Login successfully! :)");
-                   }
-                </script>
-            </form>
-        </section>
-    </div>
-</div>
-</div>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+  <div class="myregisterclass">
+      <div class="row">
+         <div class="col-md-4">
+            <section>
+                <form id="account" method="post">
+                    <h2>Use a local account to log in.</h2>
+                    <hr />
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email" class="form-label">Email</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.Password" class="form-label">Password</label>
+                        <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="checkbox mb-3">
+                        <label asp-for="Input.RememberMe" class="form-label">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                    <br />
+                    <div>
+                            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary" onclick="loginFunction()">Log in</button>
+                    </div>
+                    <br />
+                    <div>
+                        <p>
+                            <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                        </p>
+                        <p>
+                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                        </p>
+                        <p>
+                            <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                        </p>
+
+                    </div>
+                    <script>
+                       function loginFunction() {
+                            alert("Login successfully! :)");
+                       }
+                    </script>
+                </form>
+            </section>
+         </div>
+
+            <div class="col-md-6 col-md-offset-2">
+                <section>
+                    <div class="w3-container w3-animate-fading" style="text-align:center">
+                        <div class="w3-panel w3-leftbar w3-red w3-text-black">
+                            <p class="w3-large w3-serif"><i>"Make it as simple as possible, but not simpler."</i></p>
+                            <p>Albert Einstein</p>
+                        </div>
+                        <img src="~/images/einstein.jpg" style="width:50%;background-position: center;">
+                    </div>
+                </section>
+            </div>
+      </div>
+  </div>
+</body>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
