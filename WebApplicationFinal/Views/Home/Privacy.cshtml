@@ -13,9 +13,18 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         body{
            background-image: url(../images/register-image.jpg);
+        }
+
+        .mySlides {
+            display: none;
+            position: relative;
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
         }
     </style>
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
@@ -24,6 +33,35 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
+<body>
 <div class="text-center">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/SKVcQnyEIT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div> 
+</div>
+
+    <div class="w3-container;text-center;">
+        <h3 style="color:Tomato; background-color:aqua;text-align:center;">Library Slideshow</h3>
+    </div>
+    <div class="w3-content" style="max-width:600px">
+        <img class="mySlides" src="~/images/book1.jpg" style="width:80%;background-position: center;">
+        <img class="mySlides" src="~/images/book2.jpg" style="width:70%;background-position: center;">
+        <img class="mySlides" src="~/images/book3.jpg" style="width:80%;background-position: center;">
+        <img class="mySlides" src="~/images/book4.jpg" style="width:80%;background-position: center;">
+        <img class="mySlides" src="~/images/book5.jpg" style="width:80%;background-position: center;">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>

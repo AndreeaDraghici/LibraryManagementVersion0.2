@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +20,7 @@ namespace WebApplicationFinal.Controllers
         {
             _context = context;
         }
+        [Authorize(Roles = "Admin,Client")]
 
         // GET: Books
         public async Task<IActionResult> Index()
@@ -26,7 +29,7 @@ namespace WebApplicationFinal.Controllers
                           View(await _context.Books.ToListAsync()) :
                           Problem("Entity set 'LibraryWebDBContext.Books'  is null.");
         }
-
+        [Authorize(Roles = "Admin,Client")]
         // GET: Books/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -44,7 +47,7 @@ namespace WebApplicationFinal.Controllers
 
             return View(book);
         }
-
+        [Authorize(Roles = "Admin,Client")]
         // GET: Books/Create
         public IActionResult Create()
         {
@@ -56,6 +59,7 @@ namespace WebApplicationFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Client")]
         public async Task<IActionResult> Create([Bind("book_id,name,publisher,category_type,photoURL")] Book book)
         {
             if (ModelState.IsValid)
@@ -66,7 +70,7 @@ namespace WebApplicationFinal.Controllers
             }
             return View(book);
         }
-
+        [Authorize(Roles = "Admin,Client")]
         // GET: Books/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -88,6 +92,7 @@ namespace WebApplicationFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Client")]
         public async Task<IActionResult> Edit(int id, [Bind("book_id,name,publisher,category_type,photoURL")] Book book)
         {
             if (id != book.book_id)
@@ -118,6 +123,7 @@ namespace WebApplicationFinal.Controllers
             return View(book);
         }
 
+        [Authorize(Roles = "Admin,Client")]
         // GET: Books/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -139,6 +145,7 @@ namespace WebApplicationFinal.Controllers
         // POST: Books/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin,Client")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Books == null)
