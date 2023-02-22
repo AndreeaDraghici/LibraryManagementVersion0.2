@@ -19,7 +19,7 @@ namespace WebApplicationFinal.Controllers
         {
             return View();
         }
-
+        [Authorize(Roles = "Admin,Client")]
         public IActionResult Privacy()
         {
             return View();

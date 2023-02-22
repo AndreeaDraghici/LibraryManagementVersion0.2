@@ -16,7 +16,7 @@ namespace WebApplicationFinal.Models
         public string? category_type { get; set; }
         public ICollection<Category>? Category { get; set; }
   
-        [Display(Name = "Books")]
+        [Display(Name = "Book")]
         public string? photoURL { get; set; }
     }
 }
