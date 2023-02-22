@@ -17,7 +17,7 @@ namespace WebApplicationFinal.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0")
+                .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -278,17 +278,14 @@ namespace WebApplicationFinal.Migrations
                     b.Property<string>("category_type")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("message_id")
-                        .HasColumnType("int");
-
                     b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("photoURL")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("publisher")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("stock_id")
-                        .HasColumnType("int");
 
                     b.HasKey("book_id");
 
@@ -422,11 +419,9 @@ namespace WebApplicationFinal.Migrations
 
             modelBuilder.Entity("WebApplicationFinal.Models.Book", b =>
                 {
-                    b.HasOne("WebApplicationFinal.Models.AuthorBook", "AuthorBook")
+                    b.HasOne("WebApplicationFinal.Models.AuthorBook", null)
                         .WithMany("Books")
                         .HasForeignKey("AuthorBookid");
-
-                    b.Navigation("AuthorBook");
                 });
 
             modelBuilder.Entity("WebApplicationFinal.Models.Category", b =>
@@ -441,7 +436,7 @@ namespace WebApplicationFinal.Migrations
             modelBuilder.Entity("WebApplicationFinal.Models.Library", b =>
                 {
                     b.HasOne("WebApplicationFinal.Models.Book", "Book")
-                        .WithMany("Library")
+                        .WithMany()
                         .HasForeignKey("book_id");
 
                     b.Navigation("Book");
@@ -450,7 +445,7 @@ namespace WebApplicationFinal.Migrations
             modelBuilder.Entity("WebApplicationFinal.Models.Message", b =>
                 {
                     b.HasOne("WebApplicationFinal.Models.Book", "Book")
-                        .WithMany("Message")
+                        .WithMany()
                         .HasForeignKey("book_id");
 
                     b.Navigation("Book");
@@ -466,10 +461,6 @@ namespace WebApplicationFinal.Migrations
             modelBuilder.Entity("WebApplicationFinal.Models.Book", b =>
                 {
                     b.Navigation("Category");
-
-                    b.Navigation("Library");
-
-                    b.Navigation("Message");
                 });
 #pragma warning restore 612, 618
         }

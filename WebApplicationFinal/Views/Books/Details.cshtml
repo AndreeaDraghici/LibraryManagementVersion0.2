@@ -3,10 +3,11 @@
 @{
     ViewData["Title"] = "Details";
 }
+
 <link rel="stylesheet" href="~/css/detalii.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<h1>Vizualizare detalii</h1>
+<h1 style="color:Tomato; background-color:DodgerBlue;">See details</h1>
 
 <div>
     <hr />
@@ -30,20 +31,14 @@
             @Html.DisplayFor(model => model.category_type)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.stock_id)
+            @Html.DisplayNameFor(model => model.photoURL)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.stock_id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.message_id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.message_id)
+            @Html.DisplayFor(model => model.photoURL)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.book_id">Editeaza</a> |
-    <a asp-action="Index">Inapoi la pagina cu carti</a>
+    <a asp-action="Edit" asp-route-id="@Model?.book_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
 </div>

@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\images\\TratatDeIstorie.jpg"
     },
     {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\book-user-avatar.webp",
+      "PackagePath": "staticwebassets\\images\\book-user-avatar.webp"
+    },
+    {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\books.jfif",
       "PackagePath": "staticwebassets\\images\\books.jfif"
     },
