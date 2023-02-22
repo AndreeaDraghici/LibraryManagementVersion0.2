@@ -5,67 +5,67 @@
 <link rel="stylesheet" href="~/css/contact.css" />
 
 <head>
-<style> 
-    input[type=text] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 2px solid red;
-      border-radius: 4px;
-      background-color: #3CBC8D;
-      color: white;
-    }
-    textarea{
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 2px solid red;
-      border-radius: 4px;
-      background-color: #3CBC8D;
-      color: white;
-    }
-</style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style> 
+        input[type=text] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid red;
+          border-radius: 4px;
+          background-color: #3CBC8D;
+          color: white;
+        }
+        textarea{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid red;
+          border-radius: 4px;
+          background-color: #3CBC8D;
+          color: white;
+        }
+    </style>
 </head>
 
-<div class="container">
-    <div style="text-align:center">
-        <h2 style="color:Tomato; background-color:DodgerBlue;">Contact Us</h2>
-        <p>Swing by for a cup of coffee, or leave us a message:</p>
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <img src="../images/contact.jpg" style="width:100%">
+<body>
+    <div class="container">
+        <div style="text-align:center">
+            <h2 style="color:Tomato; background-color:DodgerBlue;">Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message via mail:</p>
         </div>
 
-        <div class="column">
+        <div class="row">
+            <div class="column">
+                <img class="w3-animate-fading" src="../images/contact.jpg" style="width:100%">
+            </div>
 
-            <form action="https://formsubmit.co/draghici108@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="column">
+                <form action="https://formsubmit.co/draghici108@gmail.com" method="POST" enctype="multipart/form-data">
+                    <label for="fname" class="alert alert-info">Nume</label>
+                    <input type="text" id="fname" name="nume" placeholder="Numele tau.." required>
 
-                <label for="fname" class="alert alert-info">Nume</label>
-                <input type="text" id="fname" name="nume" placeholder="Numele tau.." required>
+                    <label for="lname" class="alert alert-info">Prenume</label>
+                    <input type="text" id="lname" name="prenume" placeholder="Prenumele tau.." required>
 
-                <label for="lname" class="alert alert-info">Prenume</label>
-                <input type="text" id="lname" name="prenume" placeholder="Prenumele tau.." required>
+                    <label for="country" class="alert alert-info">Tara</label>
+                    <select id="country" name="tara">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="romania">Romania</option>
+                        <option value="germania">Germania</option>
+                    </select>
 
-                <label for="country" class="alert alert-info">Tara</label>
-                <select id="country" name="tara">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                    <option value="romania">Romania</option>
-                    <option value="germania">Germania</option>
-                </select>
+                    <label for="subject" class="alert alert-info">Subiect</label>
+                    <textarea id="subject" name="subiect" placeholder="Lasa un mesaj.." style="height:120px" required></textarea>
 
-                <label for="subject" class="alert alert-info">Subiect</label>
-                <textarea id="subject" name="subiect" placeholder="Lasa un mesaj.." style="height:170px" required></textarea>
+                    <input type="submit" value="Trimite">
 
-                <input type="submit" value="Trimite">
-
-            </form>
-
+                </form>
+            </div>
         </div>
     </div>
-</div>
+</body>
