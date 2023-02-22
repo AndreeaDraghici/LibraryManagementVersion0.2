@@ -5,46 +5,65 @@
 }
 <link rel="stylesheet" href="~/css/register.css" />
 
-<h1>@ViewData["Title"]</h1>
+<h1 style="color:Tomato; background-color:aqua;text-align:center;">@ViewData["Title"]</h1>
 <br />
 <br />
-<div class="myregisterclass">
-<div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-group">
-                <label asp-for="Input.Email">Email</label>
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="form-group">
-                <label asp-for="Input.Password">Password</label>
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="form-group">
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="confirm your password" />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <br />
-            <br />
-                <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" onclick="registerFunction()">Register</button>
-                <script>
-                   function registerFunction() {
-                        alert("Register successfully! :)");
-                   }
-                </script>
-        </form>
-    </div>
-</div>
-</div>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
 
+    </style>
+</head>
+
+<body>
+    <div class="myregisterclass">
+        <div class="row">
+            <div class="col-md-4">
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                    <h2 style="background-color:aqua;text-align:center;">Create a new account.</h2>
+                    <hr />
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email" style="background-color:powderblue" class="form-label">Email</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.Password" style="background-color:powderblue" class="form-label">Password</label>
+                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword" style="background-color:powderblue" class="form-label">Confirm Password</label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="confirm your password" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <br />
+                    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" onclick="registerFunction()">Register</button>
+                        <script>
+                           function registerFunction() {
+                                alert("Register successfully! :)");
+                           }
+                        </script>
+                </form>
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+                 <section>
+                    <div class="w3-container w3-animate-fading" style="text-align:center">
+                          <div class="w3-panel w3-leftbar w3-red w3-text-black">
+                               <p class="w3-large w3-serif"><i>"Make it as simple as possible, but not simpler."</i></p>
+                               <p>Albert Einstein</p>
+                          </div>
+                        <img class="w3-border w3-padding" src="~/images/einstein.jpg" style="width:50%;background-position: center;">
+                     </div>
+                 </section>
+            </div>
+        </div>
+    </div>
+</body>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

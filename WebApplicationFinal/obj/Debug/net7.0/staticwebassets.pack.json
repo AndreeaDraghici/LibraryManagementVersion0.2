@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\images\\contact.jpg"
     },
     {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\einstein.jpg",
+      "PackagePath": "staticwebassets\\images\\einstein.jpg"
+    },
+    {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\library-management-system.jpg",
       "PackagePath": "staticwebassets\\images\\library-management-system.jpg"
     },
@@ -367,6 +371,62 @@
     {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\.gitignore"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\README.md",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\README.md"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\bower.json"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\jquery.simplePagination.js",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\jquery.simplePagination.js"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\simplePagination.css",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\simplePagination.css"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\SpecRunner.html",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\SpecRunner.html"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\MIT.LICENSE",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\MIT.LICENSE"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\jasmine-html.js",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\jasmine-html.js"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\jasmine.css",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\jasmine.css"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\jasmine.js",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jasmine-1.3.1\\jasmine.js"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\lib\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\spec\\SimplePaginationSpec.js",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\spec\\SimplePaginationSpec.js"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\spec\\SpecHelper.js",
+      "PackagePath": "staticwebassets\\lib\\simplePagination-jquery\\jquery-simplePagination\\tests\\spec\\SpecHelper.js"
     },
     {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\video\\bible-70216.mp4",
