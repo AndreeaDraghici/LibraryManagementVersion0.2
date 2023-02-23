@@ -1,5 +1,5 @@
 # LibraryManagementVersion0.2
-Prj. III Tools for Prog. Development
+Prj. III Tools for Prog. Development and Multimedia Systems
 
 
 **About project**
