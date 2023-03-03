@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\editare.css"
     },
     {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\css\\loginPartial.css",
+      "PackagePath": "staticwebassets\\css\\loginPartial.css"
+    },
+    {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
     },
@@ -75,6 +79,10 @@
     {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\TratatDeIstorie.jpg",
       "PackagePath": "staticwebassets\\images\\TratatDeIstorie.jpg"
+    },
+    {
+      "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
     },
     {
       "Id": "D:\\Data\\Facultate\\Anul4\\Sem1\\Proiect III\\WebApplicationFinal\\WebApplicationFinal\\wwwroot\\images\\book-user-avatar.webp",
