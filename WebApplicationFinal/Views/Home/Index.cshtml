@@ -29,7 +29,7 @@
 
 
         #buton {
-            background-color: green;
+            background-color: gr;
             color: white;
             font-weight: bold;
         }
@@ -137,9 +137,6 @@
         <marquee class="text" width="50%" direction="left" height="80px" bgcolor="aqua";>
             <h1 class="display-4">Library Management</h1>
         </marquee>
-        <br/>
-        <br/>
-        <br/>
     </div>
 
     <div class="row ">
@@ -150,8 +147,8 @@
                cursor: pointer;
                text-align: center;
                outline: 1px;
-               color: red;
-               background-color: green;
+               color: black;
+               background-color: floralwhite;
                border: solid;
                border-radius: 10px;
                box-shadow: 0 7px #CCCCCC;" type="button" onclick="location.href='@Url.Action("index","Books")'">
@@ -160,39 +157,80 @@
 
         </div>
 
+        <!-- adăugați această imagine PNG pentru a testa funcționalitatea resizable -->
+        <!-- <img src="imagine.png" /> -->
+
+        <!-- <br><br> -->
+
         <div class="col">
+
             <div class="p w3-animate-top">
                 <a class="center display" href="https://www.elefant.ro/tratat-de-istorie-a-religiilor_9fda4f4d-e996-440e-a7c4-847700c3a0e3?tracking=searchterm:tratat+de+istorie">TRATAT DE ISTORIE</a>
-                <img class="p center1" src="~/images/TratatDeIstorie.jpg" />
+                <img id="img1" class="myImg" class="p center1" src="~/images/TratatDeIstorie.jpg" onclick="applyBlurToImages()" style="width:80%;" />
             </div>
 
             <div class="p w3-animate-zoom">
                 <a class="center display" href="https://www.elefant.ro/arta-fericirii-manual-de-viata_5e05b87a-5e83-4f66-8e98-c115bb52c4de?tracking=searchterm:arta+fericirii">ARTA FERICIRII</a>
-                <img class="p center1" src="~/images/ArtaFericirii.jpg" />
+                <img id="img2" class="myImg" class="p center1" src="~/images/ArtaFericirii.jpg" onclick="applyBlurToImages()" style="width:80%;" />
             </div>
 
             <div class="p w3-animate-left">
                 <a class="center display" href="https://www.elefant.ro/retelele-de-informatie-si-misterul-vietii_c0704e88-5bff-4480-8ccb-c9b40e6331a2">MISTERUL VIETII</a>
-                <img class="p center1" src="~/images/MisterulVietii.jpg" />
+                <img id="img3" class="myImg" class="p center1" src="~/images/MisterulVietii.jpg" onclick="applyBlurToImages()" style="width:80%;" />
             </div>
 
             <br /> <br />
 
             <div class="p w3-animate-bottom ">
                 <a class="center display" href="https://www.elefant.ro/cum-sa-fii-fericit-sau-macar-mai-putin-trist_e6f2bca3-66b7-485a-ba8f-6e17dcf4fb89?tracking=searchterm:cum+sa+fii+fericit">CUM SA FII FERICIT</a>
-                <img class="p center1" src="~/images/CumSaFiiFericit.jpg" />
+                <img id="img4" class="myImg" class="p center1" src="~/images/CumSaFiiFericit.jpg" onclick="applyBlurToImages()" style="width:80%;" />
             </div>
 
             <div class="p w3-animate-top">
                 <a class="center display" href="https://www.elefant.ro/intre-doua-lumi_4a7034fb-819a-4ecc-aa57-ace1f299b2a0?tracking=searchterm:intre+doua+lumi">INTRE DOUA LUMI</a>
-                <img class="p center1" src="~/images/IntreDouaLumi.jpg" />
+                <img id="img5" class="myImg" class="p center1" src="~/images/IntreDouaLumi.jpg" onclick="applyBlurToImages()" style="width:80%;" />
             </div>
 
             <div class="p w3-animate-zoom">
                 <a class="center display" href="https://www.elefant.ro/isus-al-meu_294f0728-9d36-415a-a126-4ca1fbd38a8e?tracking=searchterm:isus">ISUS</a>
-                <img class="p center1" src="~/images/Isus.jpg" />
+                <img id="img6" class="myImg" class="p center1" src="~/images/Isus.jpg" onclick="applyBlurToImages()" style="width:80%;" />
             </div>
 
         </div>
     </div>
+
+    <script>
+
+        function applyBlur(img) {
+
+          var canvas = document.createElement("canvas");
+          var ctx = canvas.getContext("2d");
+          var imgWidth = img.naturalWidth;
+          var imgHeight = img.naturalHeight;
+
+          canvas.width = imgWidth;
+          canvas.height = imgHeight;
+
+          ctx.drawImage(img, 0, 0, imgWidth, imgHeight);
+
+          // Set the blur radius
+          var blurRadius = 10;
+
+          // Apply the blur filter
+          ctx.filter = 'blur(' + blurRadius + 'px)';
+          ctx.drawImage(canvas, 0, 0, imgWidth, imgHeight, 0, 0, imgWidth, imgHeight);
+
+          // Update the image source
+          img.src = canvas.toDataURL();
+        }
+
+        function applyBlurToImages() {
+            var images = document.querySelectorAll(".myImg");
+            for (var i = 0; i < images.length; i++) {
+                applyBlur(images[i]);
+            }
+        }
+
+    </script>
+
 </body>

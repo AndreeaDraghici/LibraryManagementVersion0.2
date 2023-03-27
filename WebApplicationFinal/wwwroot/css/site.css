@@ -55,5 +55,5 @@ li a:hover:not(.active) {
     padding: 5px;
     font-weight: bold;
     position: relative;
-    color: green;
+    color: black;
 }
